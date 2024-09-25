@@ -1,0 +1,279 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Buda", serif;
+    box-sizing: border-box;
+}
+
+#container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-left: 100px;
+}
+
+.logo {
+    width: 130px;
+}
+
+.listiteam {
+    list-style: none;
+    display: inline;
+    margin: 0px 20px
+}
+
+.list {
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.list:hover {
+    color: brown;
+    text-decoration: underline;
+}
+
+.home-content {
+    margin: 13% 100px 8%;
+}
+
+#username {
+    font-size: 50px;
+    margin-bottom: 20px;
+
+    font-family: "Pacifico", system-ui;
+
+}
+
+#lname {
+    font-family: "Pacifico", system-ui;
+    color: rgba(241, 241, 10, 0.929);
+}
+
+#download {
+    text-decoration: none;
+    background-color: black;
+    color: azure;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.home-img {
+    width: 45%;
+    height: 75%;
+    position: absolute;
+    bottom: 0px;
+    right: 30px;
+}
+
+.group1 {
+    position: absolute;
+    height: 100%;
+    bottom: 0px;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+.home-img:hover #shape {
+    bottom: 100px;
+}
+
+.home-img:hover #girl {
+    left: 100px;
+}
+
+#about {
+    margin: 15% 8% 0px 8%;
+}
+
+.sectionhead {
+    text-align: center;
+}
+
+.mainhead {
+    font-size: 30px;
+}
+
+#subhead {
+    font-size: 20px;
+    color: aqua;
+}
+
+.aboutbody {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-items: center;
+}
+
+.img1 {
+    width: 300px;
+}
+
+.aboutcontent {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.informations {
+    margin-top: 1.3rem;
+}
+
+.infobox {
+    margin-bottom: 10px;
+}
+
+.infobox>span {
+    margin-left: 1rem;
+}
+
+#skill {
+    margin: 8% 8% 0px 8%;
+}
+
+.skillcontent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+    margin-top: 20px;
+}
+
+.bars {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0px;
+    position: relative;
+}
+
+.mainhead,
+.barpercentage {
+    font-weight: 500px;
+    font-size: 1.3rem;
+}
+
+.basebar {
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0px;
+}
+
+.htmlbar {
+    background-color: orange;
+    width: 89%;
+}
+
+.cssbar {
+    background-color: orange;
+    width: 79%;
+}
+
+.jsbar {
+    background-color: orange;
+    width: 71%;
+}
+
+.reactbar {
+    background-color: orange;
+    width: 85%;
+}
+
+#contact {
+    margin: 8% 8% 0px 8%;
+}
+
+.iconcollection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+}
+
+.brands {
+    color: black;
+    font-size: 2rem;
+}
+
+.icon:hover {
+    background-image: linear-gradient(to bottom right, red, green, violet);
+}
+
+.icon:hover .brands {
+    color: aliceblue;
+    animation: rotate 3s;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(30deg);
+    }
+
+    20% {
+        transform: rotate(-30deg);
+    }
+
+    40% {
+        transform: rotate(30deg);
+    }
+
+    60% {
+        transform: rotate(-30deg);
+    }
+
+    80% {
+        transform: rotate(30deg);
+    }
+
+    100% {
+        transform: rotate(-30deg);
+    }
+}
+
+footer {
+    margin-top: 8%;
+}
+
+#copyright {
+    text-align: center;
+    font-weight: 600;
+}
+
+.uparrow {
+    float: right;
+    margin: -35px 0px 0px 20px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track{background-color: blue;}
+::-webkit-scrollbar-thumb{background-color: orange;
+border-radius: 10px;}
